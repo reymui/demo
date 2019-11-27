@@ -1,0 +1,197 @@
+/* @import url(https://fonts.googleapis.com/css?family=Nunito); */
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+
+html {
+  height: 100%;
+  overflow: hidden;
+}
+
+body { 
+  margin:0;
+  padding:0;
+	perspective: 0.7px;
+	transform-style: preserve-3d;
+  height: 100%;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  font-family: Montserrat;
+}
+
+h1 {
+   font-size: 150%
+}
+
+p {
+  font-size: 100%;
+  line-height: 150%;
+  color: #333;
+}
+
+img {
+  position: absolute;
+  top: 50%;
+  left: 35%;
+  width: 320px;
+  /* height: 240px; */
+  transform: translateZ(.25px) scale(.75) translateX(-94%) translateY(-120%) rotate(-10deg);
+  padding: 10px;
+  border-radius: 5px;
+  background: rgba(240,230,220, .7);
+  box-shadow: 0 0 1px rgb(1, 1, 1);
+}
+
+img:nth-of-type(2) {
+  transform: translateZ(.4px) scale(.5) translateX(-55%) translateY(50%) rotate(10deg);
+}
+
+img:nth-of-type(3) {
+  transform: translateZ(.35px) scale(.6) translateX(-70%) translateY(-40%) rotate(-5deg);
+}
+
+.fas.fa-brain {
+  padding-left: 10px;
+}
+
+.navbar-nav.ml-auto {
+  padding-right: 10px;
+}
+
+.header {
+  text-align: center;
+  font-size: 175%;
+  color: rgb(255, 255, 255);
+  /* text-shadow: 0 2px 2px rgb(255, 130, 130); */
+}
+
+/* .navbar-brand i {
+  padding-left: 10px;
+} */
+
+/* .nav-link {
+  float: right;
+} */
+
+.slide:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  box-shadow: 0 0 8px 1px rgba(0, 0, 0, .7);
+}
+
+.slide {
+  position: relative;
+  padding: 25vh 10%;
+  min-height: 100vh;
+  width: 100vw;
+  box-sizing: border-box;
+  box-shadow: 0 0px 0px rgba(0, 0, 0, .7);
+	transform-style: inherit;
+}
+
+.slide:nth-child(2n) .title {
+  margin-left: 0;
+  margin-right: auto;
+}
+
+.slide:nth-child(2n+1) .title {
+  margin-left: 0;
+  margin-right: auto;
+}
+
+.slide, .slide:before {
+  background: 50% 50% / cover;  
+}
+
+.title {
+  width: 50%;
+  padding: 5%;
+  border-radius: 5px;
+  background: rgba(240,230,220, .7);
+  box-shadow: 0 0 8px rgba(0, 0, 0, .7);
+  transform: translateZ(0.05px);
+  /* z-index: 10; */
+}
+
+.title h1 {
+  font-size: 150%;
+}
+
+.title p {
+  font-size: 110%;
+  line-height: 150%;
+  color: #333;
+}
+
+.title2 {
+  width: 50%;
+  padding: 5%;
+  border-radius: 5px;
+  background: rgba(240,230,220, .7);
+  box-shadow: 0 0 8px rgba(0, 0, 0, .7);
+  margin-left: auto;
+  margin-right: 50px;
+  transform: translateZ(.15px);
+}
+
+.title3 {
+  width: 50%;
+  padding: 5%;
+  border-radius: 5px;
+  background: rgba(240,230,220, .7);
+  box-shadow: 0 0 8px rgba(0, 0, 0, .7);
+  margin-left: 0;
+  margin-right: auto;
+  transform: translateZ(0.05px);
+}
+
+#title {
+  background-image: url('bg.jpg');
+  width: 100%;
+  height: 100%;
+  z-index:2;
+}
+
+#title h1 {
+ font-size: 200%;
+ position: relative;
+ top: 60px; 
+ transform: translateZ(.25px) scale(.75);
+ transform-origin: 50% 100%;
+
+}
+
+/* #slida1a {
+  position: absolute;
+  background-image: url(bg.jpg);
+} */
+
+#slide1 {
+  /* position: fixed; */
+  background-image: url(bg.jpg);
+  /* z-index:2; */
+}
+
+#slide2 {
+  background-image: url(bg.jpg);
+  /* z-index:2; */
+}
+
+#slide3:before {
+  /* background-image: url(bg.jpg); */
+  /* transform: translateZ(-1px) scale(2); */
+}
+
+#slide4 {
+  background: #222;
+}
+
+#slide4 h1 {
+  font-size: 200%;
+  position: relative;
+  top: 120px; 
+  transform: translateZ(.25px) scale(.75);
+  transform-origin: 50% 100%;
+}
