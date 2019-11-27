@@ -41,11 +41,11 @@ img {
 }
 
 img:nth-of-type(2) {
-  transform: translateZ(.4px) scale(.5) translateX(-55%) translateY(50%) rotate(10deg);
+  transform: translateZ(.35px) scale(.6) translateX(-70%) translateY(-40%) rotate(-5deg);
 }
 
 img:nth-of-type(3) {
-  transform: translateZ(.35px) scale(.6) translateX(-70%) translateY(-40%) rotate(-5deg);
+  transform: translateZ(.4px) scale(.5) translateX(-55%) translateY(50%) rotate(10deg);
 }
 
 .fas.fa-brain {
@@ -176,7 +176,7 @@ img:nth-of-type(3) {
 
 #slide2 {
   background-image: url(bg.jpg);
-  /* z-index:2; */
+  z-index:2;
 }
 
 #slide3:before {
